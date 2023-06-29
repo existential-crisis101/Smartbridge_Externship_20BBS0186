@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Autism Detection</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="login">
+      <h1>Autism Detection</h1>
+
+      <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}" method="post">
+        <input
+          type="text"
+          name="A1"
+          placeholder="A1_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A2"
+          placeholder="A2_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A3"
+          placeholder="A3_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A4"
+          placeholder="A4_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A5"
+          placeholder="A5_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A6"
+          placeholder="A6_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A7"
+          placeholder="A7_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A8"
+          placeholder="A8_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A9"
+          placeholder="A9_Score"
+          required="required"
+        />
+        <input
+          type="text"
+          name="A10"
+          placeholder="A10_Score"
+          required="required"
+        />
+        <input type="text" name="age" placeholder="Age" required="required" />
+        <input
+          type="text"
+          name="gender"
+          placeholder="Gender"
+          required="required"
+        />
+        <input
+          type="text"
+          name="ethnicity"
+          placeholder="Ethnicity"
+          required="required"
+        />
+        <input
+          type="text"
+          name="jaundice"
+          placeholder="Jaundice"
+          required="required"
+        />
+        <input
+          type="text"
+          name="country_of_res"
+          placeholder="Country of residence"
+          required="required"
+        />
+        <input
+          type="text"
+          name="used_app_before"
+          placeholder="Used app before or no"
+          required="required"
+        />
+        <input
+          type="text"
+          name="result"
+          placeholder="Result"
+          required="required"
+        />
+        <input
+          type="text"
+          name="age_desc"
+          placeholder="Age_desc"
+          required="required"
+        />
+        <input
+          type="text"
+          name="relation"
+          placeholder="Relation"
+          required="required"
+        />
+        <button type="submit" id="submit" class="btn btn-primary">
+          Predict Autism
+        </button>
+      </form>
+
+      {{ prediction_text }}
+    </div>
+  </body>
+</html>

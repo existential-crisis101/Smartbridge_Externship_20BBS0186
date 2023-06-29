@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica';
+    background: #5b5858;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1.4px;
+
+}
+
+.login {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    margin: -150px 0 0 -150px;
+    width: 450px;
+    height: 1100px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(232, 232, 232, 0.68);
+    color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 30px rgba(1, 0, 0, 0.989);
+
+    
+}
+
+.login h1 {
+    color: #060606;
+    text-shadow: 0px 0px 15px rgba(28, 27, 27, 0.441);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+input {
+    width: 85%;
+    margin-bottom: 10px;
+    background: rgba(49, 48, 48, 0.24);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px rgb(48, 48, 48);
+    
+}
+
+#submit {
+    background-color: gray;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    height: 35px;
+    width: 90%;
+    margin-bottom: 15px;
+  
+}
+button[type="submit"]:hover {
+    color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
